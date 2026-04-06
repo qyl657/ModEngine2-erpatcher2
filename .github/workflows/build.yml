@@ -89,9 +89,15 @@ jobs:
       - name: Patch MINT.h SDK Conflict
         shell: bash
         run: |
-          find . -name "MINT.h" -exec sed -i 's/_FILE_STAT_INFORMATION/_FILE_STAT_INFORMATION_MINT/g' {} +
-          find . -name "MINT.h" -exec sed -i 's/_FILE_STAT_LX_INFORMATION/_FILE_STAT_LX_INFORMATION_MINT/g' {} +
-          find . -name "MINT.h" -exec sed -i 's/_FILE_CASE_SENSITIVE_INFORMATION/_FILE_CASE_SENSITIVE_INFORMATION_MINT/g' {} +
+          find . -name "MINT.h" -exec sed -i 's/\b_FILE_STAT_INFORMATION\b/_FILE_STAT_INFORMATION_MINT/g' {} +
+          find . -name "MINT.h" -exec sed -i 's/\bFILE_STAT_INFORMATION\b/FILE_STAT_INFORMATION_MINT/g' {} +
+          find . -name "MINT.h" -exec sed -i 's/\bPFILE_STAT_INFORMATION\b/PFILE_STAT_INFORMATION_MINT/g' {} +
+          find . -name "MINT.h" -exec sed -i 's/\b_FILE_STAT_LX_INFORMATION\b/_FILE_STAT_LX_INFORMATION_MINT/g' {} +
+          find . -name "MINT.h" -exec sed -i 's/\bFILE_STAT_LX_INFORMATION\b/FILE_STAT_LX_INFORMATION_MINT/g' {} +
+          find . -name "MINT.h" -exec sed -i 's/\bPFILE_STAT_LX_INFORMATION\b/PFILE_STAT_LX_INFORMATION_MINT/g' {} +
+          find . -name "MINT.h" -exec sed -i 's/\b_FILE_CASE_SENSITIVE_INFORMATION\b/_FILE_CASE_SENSITIVE_INFORMATION_MINT/g' {} +
+          find . -name "MINT.h" -exec sed -i 's/\bFILE_CASE_SENSITIVE_INFORMATION\b/FILE_CASE_SENSITIVE_INFORMATION_MINT/g' {} +
+          find . -name "MINT.h" -exec sed -i 's/\bPFILE_CASE_SENSITIVE_INFORMATION\b/PFILE_CASE_SENSITIVE_INFORMATION_MINT/g' {} +
 
 
 

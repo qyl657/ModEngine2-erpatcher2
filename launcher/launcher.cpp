@@ -35,7 +35,7 @@ enum LaunchTarget {
 
 static std::map<LaunchTarget, LaunchTargetParams> launch_targets {
     { DS3, { L"374320", L"Game/DarkSoulsIII.exe", L"config_darksouls3.toml" } },
-    { ELDEN_RING, { L"1245620", L"Game/eldenring.exe", L"config_eldenring.toml" } },
+    { ELDEN_RING, { L"1245620", L"Game/start_protected_game.exe", L"config_eldenring.toml" } },
     { ARMORED_CORE_6, { L"1888160", L"Game/armoredcore6.exe", L"config_armoredcore6.toml" } }
 };
 
@@ -47,7 +47,7 @@ static std::map<std::string, LaunchTarget> launch_target_names {
 
 static std::map<std::string, LaunchTarget> exe_names {
     { "DarkSoulsIII.exe", DS3 },
-    { "eldenring.exe", ELDEN_RING },
+    { "start_protected_game.exe", ELDEN_RING },
     { "armoredcore6.exe", ARMORED_CORE_6 },
 };
 

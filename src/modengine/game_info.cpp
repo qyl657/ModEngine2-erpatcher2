@@ -13,7 +13,7 @@ static std::unordered_map<std::wstring, GameType> game_type_executables {
     { L"DarkSoulsII.exe", DS2 },
     { L"DarkSoulsIII.exe", DS3 },
     { L"sekiro.exe", SEKIRO },
-    { L"eldenring.exe", ELDEN_RING },
+    { L"start_protected_game.exe", ELDEN_RING },
     { L"armoredcore6.exe", ARMORED_CORE_6 }
 };
 

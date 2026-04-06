@@ -108,4 +108,5 @@ Instead, you can use your favourite debugger (WinDbg, x64dbg, or even Cheat Engi
 
 **WIP**
 
-change target to protected_exe
+change target to start_protected_game.exe
+need install vcrun2022 (using protontricks)

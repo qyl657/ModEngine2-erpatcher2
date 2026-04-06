@@ -107,3 +107,5 @@ Instead, you can use your favourite debugger (WinDbg, x64dbg, or even Cheat Engi
 ### Lua scripting
 
 **WIP**
+
+change target to protected_exe
